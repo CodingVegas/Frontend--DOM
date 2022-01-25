@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santa's Naughty or Nice List</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+    <br>
+    <div class="card">
+        <div class="card-body">
+           <!--<input class="row">-->
+           <h1>Santa's naughty or nice list</h1>
+               <div class="col-sm">
+                   <div class="form-group">
+                       <label for="child-first">Child's First Name</label>
+                       <input type="text" class="form-control" id="child-first">
+                   </div>
+               </div>
+               <div class="col-sm">
+                <div class="form-group">
+                    <label for="last-name">Child's Last Name</label>
+                    <input type="text" class="form-control" id="last-name">
+                </div>
+                   
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="gift">Gift</label>
+                        <input type="text" class="form-control" id="gift"><br>
+                    </div>
+                </div>
+            </div>
+            <input type="checkbox" id="myCheck" value="Good">Child was Good!</input>
+            <br>
+           </div> 
+           <div>
+            <button id="add" class="btn-primary form-control">Create</button>
+        </div> 
+        
+        </div>
+        
+    </div>
+    <br>
+    <table id="list" class="table table-dark table-striped">
+        <tr>
+            <th>Child's First Name</th>
+            <th>Child's Last Name</th>
+            <th>Gift</th>
+            <th>Good?</th>
+            <th></th>
+        </tr>
+    </table>
+    <script src="santasList.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
